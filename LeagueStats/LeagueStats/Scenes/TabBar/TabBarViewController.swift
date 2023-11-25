@@ -10,8 +10,8 @@ import UIKit
 class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        let firstVC = UINavigationController(rootViewController: ViewController())
-        let secondVC = UINavigationController(rootViewController: ViewController())
+        let firstVC = UINavigationController(rootViewController: ChampionViewController())
+        let secondVC = UINavigationController(rootViewController: ChampionViewController())
 
         let controllers = [firstVC, secondVC]
 
