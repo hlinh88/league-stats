@@ -9,13 +9,11 @@ import UIKit
 import LeagueAPI
 import Reusable
 
-let league = LeagueAPI(APIToken: "API_KEY")
+let league = LeagueAPI(APIToken: Constants.api_key)
 
 class ChampionViewController: UIViewController {
     @IBOutlet weak var championTableView: UITableView!
 
-
-    private var championNames: [String] = []
     private var championDetails : [ChampionDetails] = []
 
     override func viewDidLoad() {
@@ -33,38 +31,35 @@ class ChampionViewController: UIViewController {
         championTableView.dataSource = self
     }
 
-    func getDetailChampions(champNames: [String]) {
-        let queue = DispatchQueue(label: "getDetailChampion", qos: .utility)
-        queue.sync {
-            _ = champNames.map { champName in
-                league.lolAPI.getChampionDetails(byName: champName) { (champion, errorMsg) in
-                    if let champion = champion {
-                        self.championDetails.append(champion)
-                    }
-                    else {
-                        print("Request failed cause: \(errorMsg ?? "No error description")")
-                    }
-                }
-            }
-            DispatchQueue.main.async { [unowned self] in
-                self.championTableView.reloadData()
-            }
-        }
-    }
-
     func getAllChampion() {
-        let queue = DispatchQueue(label: "getAllChampionName", qos: .utility)
+        let queue = DispatchQueue(label: "getDetailChampion", qos: .utility)
         queue.async { [unowned self] in
             league.lolAPI.getAllChampionNames() { (championNames, errorMsg) in
-                if let championNames = championNames {
-                    self.getDetailChampions(champNames: championNames)
+                if let championNames {
+                    let sortedChampionNames = championNames.sorted { $0 < $1 }
+                    self.getDetailChampions(championNames: sortedChampionNames)
                 }
                 else {
                     print("Request failed cause: \(errorMsg ?? "No error description")")
                 }
             }
         }
+    }
 
+    func getDetailChampions(championNames: [String]) {
+        _ = championNames.map { champName in
+            league.lolAPI.getChampionDetails(byName: champName) { (champion, errorMsg) in
+                if let champion = champion {
+                    self.championDetails.append(champion)
+                    DispatchQueue.main.async { [unowned self] in
+                        self.championTableView.reloadData()
+                    }
+                }
+                else {
+                    print("Request failed cause: \(errorMsg ?? "No error description")")
+                }
+            }
+        }
     }
 }
 

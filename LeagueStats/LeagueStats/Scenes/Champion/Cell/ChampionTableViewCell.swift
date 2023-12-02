@@ -18,19 +18,17 @@ class ChampionTableViewCell: UITableViewCell, NibReusable {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
     func configCell(thisChampion: ChampionDetails, index: Int) {
         indexLabel.text = String(index + 1)
         guard let image = thisChampion.images?.square.url else { return }
         championImageView.sd_setImage(with: URL(string: image), placeholderImage: nil)
+        championImageView.layer.cornerRadius = 10
         championNameLabel.text = thisChampion.name
     }
 

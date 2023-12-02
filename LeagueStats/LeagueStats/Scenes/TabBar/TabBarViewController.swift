@@ -23,18 +23,18 @@ class TabBarViewController: UITabBarController {
     private func configTabBar() {
         guard let items = self.tabBar.items else { return }
 
-        let images = ["house", "heart.circle"]
-        let selectedImages = ["house.fill", "heart.circle.fill"]
+        let images = ["helmet", "winning"]
         let titles = ["Champions", "Profile"]
 
         for index in 0...(items.count-1) {
-            items[index].image = UIImage(systemName: images[index])
-            items[index].selectedImage = UIImage(systemName: selectedImages[index])
-            items[index].title = titles[index]
+                items[index].image = UIImage(named: images[index])
+                items[index].selectedImage = UIImage(named: images[index])
+                items[index].title = titles[index]
         }
 
         self.tabBar.backgroundColor = .black
         self.tabBar.tintColor = UIColor.white
+        self.tabBar.unselectedItemTintColor = UIColor.lightGray
     }
 
     class func instantiateFromNib() -> TabBarViewController {

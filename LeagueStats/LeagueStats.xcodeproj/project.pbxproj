@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E43753D2B1AFD9E0065D2C0 /* BeaufortforLOL-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E4375312B1AFD9C0065D2C0 /* BeaufortforLOL-MediumItalic.otf */; };
+		5E43753E2B1AFD9E0065D2C0 /* BeaufortforLOL-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E4375322B1AFD9C0065D2C0 /* BeaufortforLOL-BoldItalic.otf */; };
+		5E43753F2B1AFD9E0065D2C0 /* BeaufortforLOL-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E4375332B1AFD9C0065D2C0 /* BeaufortforLOL-Italic.otf */; };
+		5E4375402B1AFD9E0065D2C0 /* BeaufortforLOL-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E4375342B1AFD9D0065D2C0 /* BeaufortforLOL-Bold.otf */; };
+		5E4375412B1AFD9E0065D2C0 /* BeaufortforLOL-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E4375352B1AFD9D0065D2C0 /* BeaufortforLOL-Light.otf */; };
+		5E4375422B1AFD9E0065D2C0 /* BeaufortforLOL-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E4375362B1AFD9D0065D2C0 /* BeaufortforLOL-HeavyItalic.otf */; };
+		5E4375432B1AFD9E0065D2C0 /* BeaufortforLOL-Italic(1).otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E4375372B1AFD9D0065D2C0 /* BeaufortforLOL-Italic(1).otf */; };
+		5E4375442B1AFD9E0065D2C0 /* BeaufortforLOL-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E4375382B1AFD9D0065D2C0 /* BeaufortforLOL-LightItalic.otf */; };
+		5E4375452B1AFD9E0065D2C0 /* BeaufortforLOL-LightItalic(1).otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E4375392B1AFD9D0065D2C0 /* BeaufortforLOL-LightItalic(1).otf */; };
+		5E4375462B1AFD9E0065D2C0 /* BeaufortforLOL-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E43753A2B1AFD9D0065D2C0 /* BeaufortforLOL-Medium.otf */; };
+		5E4375472B1AFD9E0065D2C0 /* BeaufortforLOL-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E43753B2B1AFD9D0065D2C0 /* BeaufortforLOL-Regular.otf */; };
+		5E4375482B1AFD9E0065D2C0 /* BeaufortforLOL-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E43753C2B1AFD9D0065D2C0 /* BeaufortforLOL-Heavy.otf */; };
+		5E43754A2B1B00100065D2C0 /* Key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E4375492B1B00100065D2C0 /* Key.plist */; };
+		5E43754D2B1B009A0065D2C0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43754C2B1B009A0065D2C0 /* Constants.swift */; };
 		5EE9914A2B0F496D0021DD41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE991492B0F496D0021DD41 /* AppDelegate.swift */; };
 		5EE991512B0F496D0021DD41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EE9914F2B0F496D0021DD41 /* Main.storyboard */; };
 		5EE991542B0F496D0021DD41 /* LeagueStats.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EE991522B0F496D0021DD41 /* LeagueStats.xcdatamodeld */; };
@@ -23,6 +37,20 @@
 
 /* Begin PBXFileReference section */
 		35DE54DCC24CA02446452E28 /* Pods-LeagueStats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueStats.debug.xcconfig"; path = "Target Support Files/Pods-LeagueStats/Pods-LeagueStats.debug.xcconfig"; sourceTree = "<group>"; };
+		5E4375312B1AFD9C0065D2C0 /* BeaufortforLOL-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeaufortforLOL-MediumItalic.otf"; sourceTree = "<group>"; };
+		5E4375322B1AFD9C0065D2C0 /* BeaufortforLOL-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeaufortforLOL-BoldItalic.otf"; sourceTree = "<group>"; };
+		5E4375332B1AFD9C0065D2C0 /* BeaufortforLOL-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeaufortforLOL-Italic.otf"; sourceTree = "<group>"; };
+		5E4375342B1AFD9D0065D2C0 /* BeaufortforLOL-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeaufortforLOL-Bold.otf"; sourceTree = "<group>"; };
+		5E4375352B1AFD9D0065D2C0 /* BeaufortforLOL-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeaufortforLOL-Light.otf"; sourceTree = "<group>"; };
+		5E4375362B1AFD9D0065D2C0 /* BeaufortforLOL-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeaufortforLOL-HeavyItalic.otf"; sourceTree = "<group>"; };
+		5E4375372B1AFD9D0065D2C0 /* BeaufortforLOL-Italic(1).otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeaufortforLOL-Italic(1).otf"; sourceTree = "<group>"; };
+		5E4375382B1AFD9D0065D2C0 /* BeaufortforLOL-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeaufortforLOL-LightItalic.otf"; sourceTree = "<group>"; };
+		5E4375392B1AFD9D0065D2C0 /* BeaufortforLOL-LightItalic(1).otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeaufortforLOL-LightItalic(1).otf"; sourceTree = "<group>"; };
+		5E43753A2B1AFD9D0065D2C0 /* BeaufortforLOL-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeaufortforLOL-Medium.otf"; sourceTree = "<group>"; };
+		5E43753B2B1AFD9D0065D2C0 /* BeaufortforLOL-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeaufortforLOL-Regular.otf"; sourceTree = "<group>"; };
+		5E43753C2B1AFD9D0065D2C0 /* BeaufortforLOL-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeaufortforLOL-Heavy.otf"; sourceTree = "<group>"; };
+		5E4375492B1B00100065D2C0 /* Key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Key.plist; sourceTree = "<group>"; };
+		5E43754C2B1B009A0065D2C0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5EE991462B0F496D0021DD41 /* LeagueStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeagueStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE991492B0F496D0021DD41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EE991502B0F496D0021DD41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +80,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E43752F2B1AFD7B0065D2C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E4375302B1AFD880065D2C0 /* Fonts */,
+				5EE991552B0F496F0021DD41 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5E4375302B1AFD880065D2C0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5E4375342B1AFD9D0065D2C0 /* BeaufortforLOL-Bold.otf */,
+				5E4375322B1AFD9C0065D2C0 /* BeaufortforLOL-BoldItalic.otf */,
+				5E43753C2B1AFD9D0065D2C0 /* BeaufortforLOL-Heavy.otf */,
+				5E4375362B1AFD9D0065D2C0 /* BeaufortforLOL-HeavyItalic.otf */,
+				5E4375332B1AFD9C0065D2C0 /* BeaufortforLOL-Italic.otf */,
+				5E4375372B1AFD9D0065D2C0 /* BeaufortforLOL-Italic(1).otf */,
+				5E4375352B1AFD9D0065D2C0 /* BeaufortforLOL-Light.otf */,
+				5E4375382B1AFD9D0065D2C0 /* BeaufortforLOL-LightItalic.otf */,
+				5E4375392B1AFD9D0065D2C0 /* BeaufortforLOL-LightItalic(1).otf */,
+				5E43753A2B1AFD9D0065D2C0 /* BeaufortforLOL-Medium.otf */,
+				5E4375312B1AFD9C0065D2C0 /* BeaufortforLOL-MediumItalic.otf */,
+				5E43753B2B1AFD9D0065D2C0 /* BeaufortforLOL-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5E43754B2B1B008A0065D2C0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5E43754C2B1B009A0065D2C0 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		5EE9913D2B0F496D0021DD41 = {
 			isa = PBXGroup;
 			children = (
@@ -73,13 +137,15 @@
 		5EE991482B0F496D0021DD41 /* LeagueStats */ = {
 			isa = PBXGroup;
 			children = (
+				5E43752F2B1AFD7B0065D2C0 /* Resources */,
 				5EF754B52B11BFE7004946D9 /* Data */,
 				5EE991602B0F51CC0021DD41 /* Scenes */,
+				5E43754B2B1B008A0065D2C0 /* Utils */,
 				5EE991492B0F496D0021DD41 /* AppDelegate.swift */,
 				5EE9914F2B0F496D0021DD41 /* Main.storyboard */,
-				5EE991552B0F496F0021DD41 /* Assets.xcassets */,
 				5EE991572B0F496F0021DD41 /* LaunchScreen.storyboard */,
 				5EE9915A2B0F496F0021DD41 /* Info.plist */,
+				5E4375492B1B00100065D2C0 /* Key.plist */,
 				5EE991522B0F496D0021DD41 /* LeagueStats.xcdatamodeld */,
 			);
 			path = LeagueStats;
@@ -206,11 +272,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E4375442B1AFD9E0065D2C0 /* BeaufortforLOL-LightItalic.otf in Resources */,
 				5EE991652B0F51F30021DD41 /* TabBarViewController.xib in Resources */,
+				5E43753D2B1AFD9E0065D2C0 /* BeaufortforLOL-MediumItalic.otf in Resources */,
+				5E4375452B1AFD9E0065D2C0 /* BeaufortforLOL-LightItalic(1).otf in Resources */,
+				5E4375472B1AFD9E0065D2C0 /* BeaufortforLOL-Regular.otf in Resources */,
+				5E4375462B1AFD9E0065D2C0 /* BeaufortforLOL-Medium.otf in Resources */,
+				5E4375432B1AFD9E0065D2C0 /* BeaufortforLOL-Italic(1).otf in Resources */,
 				5EE991592B0F496F0021DD41 /* LaunchScreen.storyboard in Resources */,
+				5E43753F2B1AFD9E0065D2C0 /* BeaufortforLOL-Italic.otf in Resources */,
 				5EF754B42B11BB19004946D9 /* ChampionViewController.xib in Resources */,
+				5E4375412B1AFD9E0065D2C0 /* BeaufortforLOL-Light.otf in Resources */,
+				5E4375482B1AFD9E0065D2C0 /* BeaufortforLOL-Heavy.otf in Resources */,
 				5EE991562B0F496F0021DD41 /* Assets.xcassets in Resources */,
+				5E4375422B1AFD9E0065D2C0 /* BeaufortforLOL-HeavyItalic.otf in Resources */,
+				5E4375402B1AFD9E0065D2C0 /* BeaufortforLOL-Bold.otf in Resources */,
+				5E43754A2B1B00100065D2C0 /* Key.plist in Resources */,
 				5EF754BF2B11C59A004946D9 /* ChampionTableViewCell.xib in Resources */,
+				5E43753E2B1AFD9E0065D2C0 /* BeaufortforLOL-BoldItalic.otf in Resources */,
 				5EE991512B0F496D0021DD41 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +348,7 @@
 				5EE9914A2B0F496D0021DD41 /* AppDelegate.swift in Sources */,
 				5EE991542B0F496D0021DD41 /* LeagueStats.xcdatamodeld in Sources */,
 				5EF754B32B11BB19004946D9 /* ChampionViewController.swift in Sources */,
+				5E43754D2B1B009A0065D2C0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
