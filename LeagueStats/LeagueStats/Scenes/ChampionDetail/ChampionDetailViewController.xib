@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BeaufortforLOL-Bold.otf">
+            <string>BeaufortforLOL-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChampionDetailViewController" customModule="LeagueStats" customModuleProvider="target">
+            <connections>
+                <outlet property="championNameLabel" destination="qLT-C3-SC3" id="wgd-w9-NFW"/>
+                <outlet property="championTitleLabel" destination="pep-9S-m20" id="psu-I5-EcC"/>
+                <outlet property="coverImageView" destination="xts-ae-dgS" id="cKM-cf-D4q"/>
+                <outlet property="coverLayerView" destination="zIb-mC-Pst" id="sUl-J7-YeL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yX-67-gPw">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u42-hX-0Ak" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xts-ae-dgS">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="300" id="FhX-Wg-HhF"/>
+                                    </constraints>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIb-mC-Pst">
+                                    <rect key="frame" x="0.0" y="240" width="393" height="60"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Champion Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLT-C3-SC3">
+                                            <rect key="frame" x="25" y="18.666666666666686" width="130" height="23"/>
+                                            <fontDescription key="fontDescription" name="BeaufortforLOL-Bold" family="Beaufort for LOL" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Champion Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pep-9S-m20">
+                                            <rect key="frame" x="247.33333333333334" y="18.666666666666686" width="120.66666666666666" height="23"/>
+                                            <fontDescription key="fontDescription" name="BeaufortforLOL-Bold" family="Beaufort for LOL" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="pep-9S-m20" firstAttribute="centerY" secondItem="zIb-mC-Pst" secondAttribute="centerY" id="2yt-aw-o5x"/>
+                                        <constraint firstItem="qLT-C3-SC3" firstAttribute="centerY" secondItem="zIb-mC-Pst" secondAttribute="centerY" id="Bbn-5b-UF3"/>
+                                        <constraint firstItem="qLT-C3-SC3" firstAttribute="leading" secondItem="zIb-mC-Pst" secondAttribute="leading" constant="25" id="g5G-T4-BuT"/>
+                                        <constraint firstAttribute="trailing" secondItem="pep-9S-m20" secondAttribute="trailing" constant="25" id="pm9-gn-tVf"/>
+                                        <constraint firstAttribute="height" constant="60" id="qoH-P3-hKK"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVW-QA-7OT">
+                                    <rect key="frame" x="10" y="20" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="eGu-W3-1RU"/>
+                                        <constraint firstAttribute="height" constant="30" id="pXK-cE-Mav"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="chevron.left" catalog="system">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="handleBack:" destination="-1" eventType="touchUpInside" id="8il-Qp-KlY"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="xts-ae-dgS" firstAttribute="trailing" secondItem="zIb-mC-Pst" secondAttribute="trailing" id="LVf-4U-roq"/>
+                                <constraint firstItem="iVW-QA-7OT" firstAttribute="top" secondItem="u42-hX-0Ak" secondAttribute="top" constant="20" id="QHk-6X-LKE"/>
+                                <constraint firstItem="zIb-mC-Pst" firstAttribute="leading" secondItem="xts-ae-dgS" secondAttribute="leading" id="QKd-qa-yj8"/>
+                                <constraint firstItem="xts-ae-dgS" firstAttribute="top" secondItem="u42-hX-0Ak" secondAttribute="top" id="fXT-mz-BzQ"/>
+                                <constraint firstAttribute="height" constant="1000" id="gOK-Md-2PV"/>
+                                <constraint firstAttribute="trailing" secondItem="xts-ae-dgS" secondAttribute="trailing" id="jce-ei-gq7"/>
+                                <constraint firstItem="iVW-QA-7OT" firstAttribute="leading" secondItem="u42-hX-0Ak" secondAttribute="leading" constant="10" id="kN0-go-9nR"/>
+                                <constraint firstItem="xts-ae-dgS" firstAttribute="bottom" secondItem="zIb-mC-Pst" secondAttribute="bottom" id="rXe-Gv-EwB"/>
+                                <constraint firstItem="xts-ae-dgS" firstAttribute="leading" secondItem="u42-hX-0Ak" secondAttribute="leading" id="rn0-gB-9LK"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="u42-hX-0Ak" firstAttribute="top" secondItem="0yX-67-gPw" secondAttribute="top" id="FtN-OV-wU5"/>
+                        <constraint firstItem="u42-hX-0Ak" firstAttribute="width" secondItem="0yX-67-gPw" secondAttribute="width" id="Inu-Bm-pxR"/>
+                        <constraint firstAttribute="trailing" secondItem="u42-hX-0Ak" secondAttribute="trailing" id="PJK-KV-Bvi"/>
+                        <constraint firstAttribute="bottom" secondItem="u42-hX-0Ak" secondAttribute="bottom" id="Z9N-49-VXV"/>
+                        <constraint firstItem="u42-hX-0Ak" firstAttribute="leading" secondItem="0yX-67-gPw" secondAttribute="leading" id="i2z-pI-prR"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0yX-67-gPw" secondAttribute="bottom" id="XBb-e5-Otu"/>
+                <constraint firstItem="0yX-67-gPw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bFX-dV-Gqj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0yX-67-gPw" secondAttribute="trailing" id="dAu-yp-ZWe"/>
+                <constraint firstItem="0yX-67-gPw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gNs-2F-8fi"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+    </resources>
+</document>

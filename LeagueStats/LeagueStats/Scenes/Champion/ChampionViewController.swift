@@ -79,4 +79,10 @@ extension ChampionViewController: UITableViewDelegate {
         }
         return UITableViewCell()
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let championDetailVC = ChampionDetailViewController()
+        championDetailVC.setChampionDetails(thisChampion: championDetails[indexPath.row])
+        self.navigationController?.pushViewController(championDetailVC, animated: true)
+    }
 }
